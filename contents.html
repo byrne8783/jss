@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Whats in the default reactredux JSS project</title>
+</head>
+<body>
+    <h1></h1>
+    <ul>
+        <li>
+
+            <h2>ClientApp</h2>
+            <ul >
+                <li>
+                    <p><h3>Components</h3>various react components</p>
+
+                    <ul>
+                        <li>
+                            Layout.tsx<p>
+                                It does what it says on the tin - creates the layout.
+                                Renders NavMenu in a side panel and children in a content panel.
+                            </p>
+                        </li>
+                        <li>Home.tsx<p>Renders the 'Hello World' stuff.  Whats in the actual app, and a link to it</p></li>
+                        <li>NavMenu.tsx<p>Looks like a bit of meat.  Has a Link component to wherever we want to go</p></li>
+                        <li>Counter.tsx<p>Renders the counter markup and maps state-to-props and actionCreators-to-props</p></li>
+                        <li>FetchData.tsx<p>A FetchData example.  With a lot more meat thanthe Counter</p></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><h3>Css</h3></p>
+                    <ul>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                    </ul>
+                </li>
+                <li id="componentsDist">
+                    
+                    <p><h3>dist</h3>This stuff is generated and can be left alone</p>
+                    <ul>
+                        <li>main-server.js<p></p></li>
+                        <li>vendor.js<p></p></li>
+                        <li>vendor-manifest.json<p></p></li>
+                        <li><p></p></li>
+                    </ul>
+                </li>
+                <li id="componentsStore">
+                    <p><h3>store</h3>various react components</p>
+                    <ul>
+                        <li>index.ts<p>This nominates the actual state we need in the applications in a Type, has the declaration which map the reducers to the state property
+                            and sets up a type for the 'dispatch' and 'getState' params</p></li>
+                        <li>Counter.ts<p></p></li>
+                        <li>WeatherForecasts.ts<p></p></li>
+                        <li><p></p></li>
+                    </ul>
+                </li>
+                <li>boot-client.tsx<p>Gets the initial state of the store. Starts up the React app when it runs in a browser -It sets up the 
+                    routing configuration and injects the app into a DOM element called react-app.</p></li>
+                <li>boot-server.tsx<p>A very interesting box of tricks.  Needs more study. </p></li>
+                <li>routes.tsx<p>this is setting up a piece of JSX which references a Layout component with three instances of a Route component (from react-router-dom)
+                    which basically set up routing for Home,Counter and FetchData.  These are the components we wrote in <a>ClientApp\Components</a></p></li>
+                <li>configureStore.ts<p>This is the 'its a wrap' processing for the store.  Lots of the name-brand middleware getting wired up here.  
+                    Can't see our mega-important little counter but I suspect it will be included in the <a>ApplicationState</a>.
+                    There are actually no application dependencies in here its all boilerplate.</p></li>
+
+            </ul>
+        </li>
+        <li>
+            <h2>Views</h2>
+            <ul>
+                <li>
+                    <h3>Home</h3>
+                    <ul>
+                        <li>index.cshtml<p>Has an element called 'react-app' and sets up a script for <a>dist/main-client.js</a></p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Shared</h3>
+                    <ul>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                    </ul>
+                </li>
+                <li>_ViewImports.cshtml<p></p></li>
+                <li>_ViewStart.cshtml<p></p></li>
+                <li><p></p></li>
+            </ul>
+        </li>
+        <li>
+            <h2></h2>
+            <ul>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+            </ul><p></p>
+        </li>
+        <li>
+            <ul>
+                <li><p></p></li>
+            </ul><p></p>
+        </li>
+    </ul>
+</body>
+</html>
